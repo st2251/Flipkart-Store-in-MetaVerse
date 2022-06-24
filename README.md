@@ -1,8 +1,9 @@
-# store_template
+# Store Template
+ 
  A basic generic virtual store for wearables and other tokens
 
 
-![](screenshot/screenshot.gif)
+![](screenshot/screenshot.png)
 
 This scene shows you:
 
