@@ -27,14 +27,13 @@ export function addLogo() {
 
     //BOTTOM LOGO
     const bottomLogoData = config.logo.bottom
-
-    const logoFrame = new Entity()
-    logoFrame.addComponent(new GLTFShape("models/logo_frame.glb"))
-    logoFrame.addComponent(new Transform({
+    
+    const logoParent = new Entity()
+    logoParent.addComponent(new Transform({
         position: config.logo.bottom.position,
         rotation: Quaternion.Euler(0, 0, 0)
     }))
-
+    
     let imageTexture = new Texture(bottomLogoData.imgSrc)
     let pictureMat = new Material()
     pictureMat.albedoTexture = imageTexture
@@ -64,8 +63,8 @@ export function addLogo() {
     }))
     imgBack.addComponent(pictureMat)
 
-    imgFront.setParent(logoFrame)
-    imgBack.setParent(logoFrame)
+    imgFront.setParent(logoParent)
+    imgBack.setParent(logoParent)
 
-    logoFrame.setParent(pivotScene)
+    logoParent.setParent(pivotScene)
 }

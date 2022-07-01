@@ -2,12 +2,12 @@ import { pivotScene } from "./pivot"
 
 export function addBuilding() {
     const building = new Entity()
-    building.addComponent(new GLTFShape("models/store.glb"))
+    building.addComponent(new GLTFShape("models/store/store.glb"))
     building.setParent(pivotScene)
 
 
     let photoMachine = new Entity()
-    photoMachine.addComponent(new GLTFShape("models/photo_machine.glb"))
+    photoMachine.addComponent(new GLTFShape("models/store/photo_machine.glb"))
     photoMachine.setParent(pivotScene)
 
     //PHOTO MACHINE ANIMATION
