@@ -1,3 +1,5 @@
+import { KeepRotatingComponent, RotateTransformComponent } from "@dcl/ecs-scene-utils";
+
 export default {
     //SCENE FACING: "NORTH"/"EAST"/"SOUTH"/"WEST"
     sceneOrientation: "NORTH",
@@ -8,7 +10,7 @@ export default {
             position: new Vector3(6.96862, 5.72577, 7.34845)
         },
         top: {
-            name: "BRAND\nNAME",
+            name: "Flipkart",
             fontSize: 6,
             color: new Color3(0.1, 0.1, 0.1),
             position: new Vector3(0, 5.84663, 6.39477)
@@ -41,7 +43,7 @@ export default {
         }
     ],
     videoScreen: {
-        src: "https://player.vimeo.com/external/552481870.m3u8?s=c312c8533f97e808fccc92b0510b085c8122a875",
+        src: "https://bafybeid5ll3dkfhnkkbqdujf7iqxyuslnhlf23jzjcjbbo6nwm54mtgije.ipfs.dweb.link/flipkart.mp4",
         width: 1280,
         height: 720
     },
@@ -51,7 +53,7 @@ export default {
             model: "models/wearables/1.glb",
             link: "https://market.decentraland.org/",
             position: new Vector3(4.2, -0.1, 5.1),
-            rotation: Quaternion.Euler(0, 0, 0)
+            rotation: Quaternion.Euler(0,0,0)
         },
         {
             name: "DCL Logo Hoddie",
@@ -94,6 +96,13 @@ export default {
             link: "https://market.decentraland.org/",
             position: new Vector3(-1, 0.7, -0.7),
             rotation: Quaternion.Euler(0, -45, 0)
+        },
+        {
+            name: "",
+            model:"",
+            link: "",
+            position:new Vector3(0,0,0),
+            rotation : Quaternion.Euler(0,0,0)
         },
     ]
 }

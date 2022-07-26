@@ -13,7 +13,7 @@
 	},
 	"devDependencies": {
 		"@dcl/eslint-config": "^1.0.1",
-		"decentraland-ecs": "^6.11.0"
+		"decentraland-ecs": "^6.11.3"
 	},
 	"engines": {
 		"node": ">=14.0.0",
