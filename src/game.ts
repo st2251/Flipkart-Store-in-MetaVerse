@@ -21,6 +21,15 @@ import { loadEthereumLevel, loadEthereumBricks, unloadEthereumBricks } from "./g
 import { loadDecentralandLevel, loadDecentralandBricks, unloadDecentralandBricks } from "./gameLogic/decentralandLevel"
 import { GameManager } from "./gameManager"
 
+const _scene = new Entity('_scene')
+engine.addEntity(_scene)
+const transform = new Transform({
+  position: new Vector3(0,0,0),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+_scene.addComponentOrReplace(transform)
+
 setSceneOrientation()
 addBuilding()
 addLogo()
@@ -172,22 +181,37 @@ arcadeCabinetDecentraland.addComponent(
 
 
 //------------------------------------------------------------QR Codes code---------------------------------------------------------
-const imageFromURL = new Entity('imageFromURL')
-const transform2 = new Transform({
-  position: new Vector3(2.85,0.93,8.54),
-  rotation: Quaternion.Euler(0,90,0),
-  scale: new Vector3(0.4, 0.4, 0.4)
-})
-imageFromURL.addComponentOrReplace(transform2)
-engine.addEntity(imageFromURL)
+// const suit = new Entity('suit')
+// engine.addEntity(suit)
+// suit.setParent(_scene)
+// const transform1 = new Transform({
+//   position: new Vector3(2.85,0.93,8.54),
+//   rotation: Quaternion.Euler(0,90,0),
+//   scale: new Vector3(0.4, 0.4, 0.4)
+// })
+// suit.addComponentOrReplace(transform1)
 
-const channelId = Math.random().toString(16).slice(2)
-const channelBus = new MessageBus()
-const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
+// const jacket = new Entity('jacket')
+// engine.addEntity(jacket)
+// jacket.setParent(_scene)
+// const transform2 = new Transform({
+//   position: new Vector3(7.29,0.93,9),
+//   rotation: Quaternion.Euler(0,0,0),
+//   scale: new Vector3(0.4, 0.4, 0.4)
+// })
+// suit.addComponentOrReplace(transform2)
 
-const script1 = new Script1()
-script1.init()
-script1.spawn(imageFromURL, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bqh4ppf6mm3d7zity23ujgvnjdi.ipfs.dweb.link/avtarSuitQR.png"}, createChannel(channelId, imageFromURL, channelBus))
+
+
+// const channelId = Math.random().toString(16).slice(2)
+// const channelBus = new MessageBus()
+// const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
+// const options = { inventory }
+
+// const script1 = new Script1()
+// script1.init()
+// script1.spawn(suit, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bqh4ppf6mm3d7zity23ujgvnjdi.ipfs.dweb.link/avtarSuitQR.png"}, createChannel(channelId, suit, channelBus))
+// script1.spawn(jacket,{"image":""},createChannel(channelId,jacket,channelBus))
 
 // const a = new Entity()
 // a.addComponent(new GLTFShape("models/wearables/mens_two_piece_suit/scene.gltf"))
@@ -197,3 +221,79 @@ script1.spawn(imageFromURL, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bq
 //   scale:new Vector3(1,1,1)
 // }))
 // engine.addEntity(a)
+const imageFromURL = new Entity('imageFromURL')
+engine.addEntity(imageFromURL)
+imageFromURL.setParent(_scene)
+const transform2 = new Transform({
+  position: new Vector3(2.85,0.93,8.54),
+  rotation: Quaternion.Euler(0,90,0),
+  scale: new Vector3(0.4,0.4,0.4)
+})
+imageFromURL.addComponentOrReplace(transform2)
+
+const imageFromURL2 = new Entity('imageFromURL2')
+engine.addEntity(imageFromURL2)
+imageFromURL2.setParent(_scene)
+const transform7 = new Transform({
+  position: new Vector3(7.29,0.93,9),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(0.4,0.4,0.4)
+})
+imageFromURL2.addComponentOrReplace(transform7)
+
+const imageFromURL3 = new Entity('imageFromURL3')
+engine.addEntity(imageFromURL3)
+imageFromURL3.setParent(_scene)
+const transform8 = new Transform({
+  position: new Vector3(11.59,0.93,12.92),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(0.4,0.4,0.4)
+})
+imageFromURL3.addComponentOrReplace(transform8)
+
+const imageFromURL4 = new Entity('imageFromURL4')
+engine.addEntity(imageFromURL4)
+imageFromURL4.setParent(_scene)
+const transform9 = new Transform({
+  position: new Vector3(4.60,0.93,13.42),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(0.4,0.4,0.4)
+})
+imageFromURL4.addComponentOrReplace(transform9)
+
+const imageFromURL5 = new Entity('imageFromURL5')
+engine.addEntity(imageFromURL5)
+imageFromURL5.setParent(_scene)
+const transform10 = new Transform({
+  position: new Vector3(13.11,1.04,5.60),
+  rotation: Quaternion.Euler(0, 90, 0,),
+  scale: new Vector3(0.4,0.4,0.4)
+})
+imageFromURL5.addComponentOrReplace(transform10)
+
+const imageFromURL6 = new Entity('imageFromURL6')
+engine.addEntity(imageFromURL6)
+imageFromURL6.setParent(_scene)
+const transform11 = new Transform({
+  position: new Vector3(8, 5.14663, 14.40),
+  rotation: Quaternion.Euler(0, 0, 0,),
+  scale: new Vector3(5.5,1.5,0.4)
+})
+imageFromURL6.addComponentOrReplace(transform11)
+
+const channelId = Math.random().toString(16).slice(2)
+const channelBus = new MessageBus()
+const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
+const options = { inventory }
+
+const script1 = new Script1()
+script1.init()
+script1.spawn(imageFromURL, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bqh4ppf6mm3d7zity23ujgvnjdi.ipfs.dweb.link/avtarSuitQR.png"}, createChannel(channelId, imageFromURL, channelBus))
+script1.spawn(imageFromURL2, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bqh4ppf6mm3d7zity23ujgvnjdi.ipfs.dweb.link/avtarSuitQR.png"}, createChannel(channelId, imageFromURL2, channelBus))
+script1.spawn(imageFromURL3, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bqh4ppf6mm3d7zity23ujgvnjdi.ipfs.dweb.link/avtarSuitQR.png"}, createChannel(channelId, imageFromURL3, channelBus))
+script1.spawn(imageFromURL4, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bqh4ppf6mm3d7zity23ujgvnjdi.ipfs.dweb.link/avtarSuitQR.png"}, createChannel(channelId, imageFromURL4, channelBus))
+script1.spawn(imageFromURL5, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bqh4ppf6mm3d7zity23ujgvnjdi.ipfs.dweb.link/avtarSuitQR.png"}, createChannel(channelId, imageFromURL5, channelBus))
+script1.spawn(imageFromURL6, {"image":"https://bafybeiavauicvjx5gfd7jaijhovjgo6jk7gmszd7r73iog357ioqsdnplq.ipfs.dweb.link/1600858456_HulSrV_Flipkart.jpg"}, createChannel(channelId, imageFromURL6, channelBus))
+
+
+

@@ -8,7 +8,7 @@ export async function addWearable() {
         wearableItem.addComponent(new Transform({
             position: item.position,
             rotation: item.rotation,
-            scale: new Vector3(1.1, 1.1, 1.1)
+            scale: item.scale
         }))
         wearableItem.setParent(pivotScene)
 

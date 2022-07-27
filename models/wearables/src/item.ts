@@ -11,7 +11,7 @@ export default class SignPost implements IScript<Props> {
     const sign = new Entity()
     sign.setParent(host)
 
-    //sign.addComponent(new GLTFShape('models/QR_SimpleFrame.glb'))
+    sign.addComponent(new GLTFShape('models/QR_SimpleFrame.glb'))
     sign.addComponent(new Transform({}))
 
     let url = props.image
