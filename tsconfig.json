@@ -1,3 +1,4 @@
+//config.json
 {
   "compilerOptions": {
     "outFile": "./bin/game.js",
