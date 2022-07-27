@@ -78,9 +78,9 @@ export default {
         },
         {
             name: "Launch TShirt",
-            model: "models/wearables/5.glb",
+            model: "models/wearables/leather_jacket/scene.gltf",
             link: "https://market.decentraland.org/",
-            position: new Vector3(0, -0.1, 0.7),
+            position: new Vector3(0, 1.5, 0.7),
             rotation: Quaternion.Euler(0, 0, 0)
         },
         {
@@ -98,11 +98,11 @@ export default {
             rotation: Quaternion.Euler(0, -45, 0)
         },
         {
-            name: "",
-            model:"",
-            link: "",
-            position:new Vector3(0,0,0),
-            rotation : Quaternion.Euler(0,0,0)
+            name: "Suit",
+            model:"models/wearables/mens_two_piece_suit/scene.gltf",
+            link: "https://market.decentraland.org/",
+            position:new Vector3(-4.93,0.5,0.14),
+            rotation : Quaternion.Euler(0,90,0)
         },
     ]
 }

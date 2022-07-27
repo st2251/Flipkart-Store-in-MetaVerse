@@ -1,0 +1,11 @@
+Model Information:
+* title:	Suit
+* source:	https://sketchfab.com/3d-models/suit-93bc5a1c73f6445094f552029dabf4f2
+* author:	kanghu (https://sketchfab.com/wxyj)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Suit" (https://sketchfab.com/3d-models/suit-93bc5a1c73f6445094f552029dabf4f2) by kanghu (https://sketchfab.com/wxyj) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

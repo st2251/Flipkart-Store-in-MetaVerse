@@ -1,0 +1,11 @@
+Model Information:
+* title:	Leather Jacket
+* source:	https://sketchfab.com/3d-models/leather-jacket-c9e54b0c51a8424e8f05b774d42c7f80
+* author:	zacharykozak (https://sketchfab.com/zacharykozak)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Leather Jacket" (https://sketchfab.com/3d-models/leather-jacket-c9e54b0c51a8424e8f05b774d42c7f80) by zacharykozak (https://sketchfab.com/zacharykozak) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
