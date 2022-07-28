@@ -6,6 +6,14 @@ import { createDispenser } from "./booth/dispenser"
 import { addLogo } from "./modules/logo"
 import { addWearable } from "./modules/wearable"
 
+import { addBuilding1 } from "./modules/building1"
+import { setSceneOrientation1 } from "./modules/pivot1"
+import { addSocialLink1 } from "./modules/socialLink1"
+import { addVideoScreen1 } from "./modules/videoScreen1"
+import { addLogo1 } from "./modules/logo1"
+import { addWearable1 } from "./modules/wearable1"
+
+
 import { createChannel } from '../node_modules/decentraland-builder-scripts/channel'
 import { createInventory } from '../node_modules/decentraland-builder-scripts/inventory'
 import Script1 from "models/wearables/src/item"
@@ -39,6 +47,13 @@ addLogo()
 addSocialLink()
 addVideoScreen()
 addWearable()
+
+setSceneOrientation1()
+addBuilding1()
+addLogo1()
+addSocialLink1()
+addVideoScreen1()
+addWearable1()
 
 //flooring starts
 const entity = new Entity('entity')
@@ -151,7 +166,7 @@ entity10.addComponentOrReplace(gltfShape)
 const transform30 = new Transform({
   position: new Vector3(-8, 0, -8),
   rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
+  scale: new Vector3(1, 1, 1) 
 })
 entity10.addComponentOrReplace(transform30)
 
@@ -312,46 +327,7 @@ arcadeCabinetDecentraland.addComponent(
 
 
 //------------------------------------------------------------QR Codes code---------------------------------------------------------
-// const suit = new Entity('suit')
-// engine.addEntity(suit)
-// suit.setParent(_scene)
-// const transform1 = new Transform({
-//   position: new Vector3(2.85,0.93,8.54),
-//   rotation: Quaternion.Euler(0,90,0),
-//   scale: new Vector3(0.4, 0.4, 0.4)
-// })
-// suit.addComponentOrReplace(transform1)
 
-// const jacket = new Entity('jacket')
-// engine.addEntity(jacket)
-// jacket.setParent(_scene)
-// const transform2 = new Transform({
-//   position: new Vector3(7.29,0.93,9),
-//   rotation: Quaternion.Euler(0,0,0),
-//   scale: new Vector3(0.4, 0.4, 0.4)
-// })
-// suit.addComponentOrReplace(transform2)
-
-
-
-// const channelId = Math.random().toString(16).slice(2)
-// const channelBus = new MessageBus()
-// const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
-// const options = { inventory }
-
-// const script1 = new Script1()
-// script1.init()
-// script1.spawn(suit, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bqh4ppf6mm3d7zity23ujgvnjdi.ipfs.dweb.link/avtarSuitQR.png"}, createChannel(channelId, suit, channelBus))
-// script1.spawn(jacket,{"image":""},createChannel(channelId,jacket,channelBus))
-
-// const a = new Entity()
-// a.addComponent(new GLTFShape("models/wearables/mens_two_piece_suit/scene.gltf"))
-// a.addComponent(new Transform({
-//   position:new Vector3(-5.48,0.88,25.82),
-//   rotation:Quaternion.Euler(0,0,0),
-//   scale:new Vector3(1,1,1)
-// }))
-// engine.addEntity(a)
 const imageFromURL = new Entity('imageFromURL')
 engine.addEntity(imageFromURL)
 imageFromURL.setParent(_scene)
