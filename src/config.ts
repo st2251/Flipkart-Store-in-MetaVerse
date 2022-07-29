@@ -81,7 +81,7 @@ export default {
             scale: new Vector3(1.1, 1.1, 1.1)
         },
         {
-            name: "Launch TShirt",
+            name: "Women Dress",
             model: "models/wearables/leather_jacket/scene.gltf",
             link: "https://market.decentraland.org/",
             position: new Vector3(0, 1.5, 0.7),

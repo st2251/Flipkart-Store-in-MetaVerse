@@ -14,6 +14,12 @@ import { addLogo1 } from "./modules/logo1"
 import { addWearable1 } from "./modules/wearable1"
 
 
+import { PianoKey, keys } from './pianoKey'
+import resources from './resources'
+import { createCoin } from './coin'
+
+
+
 import { createChannel } from '../node_modules/decentraland-builder-scripts/channel'
 import { createInventory } from '../node_modules/decentraland-builder-scripts/inventory'
 import Script1 from "models/wearables/src/item"
@@ -41,13 +47,14 @@ const transform = new Transform({
 })
 _scene.addComponentOrReplace(transform)
 
+//--------------------------------------------------------Shop1--------------------------------------------------------------------------------
 setSceneOrientation()
 addBuilding()
 addLogo()
 addSocialLink()
 addVideoScreen()
 addWearable()
-
+//---------------------------------------------------------Shop2------------------------------------------------------------------------
 setSceneOrientation1()
 addBuilding1()
 addLogo1()
@@ -55,7 +62,7 @@ addSocialLink1()
 addVideoScreen1()
 addWearable1()
 
-//flooring starts
+//-----------------------------------------------------flooring starts------------------------------------------------------------------
 const entity = new Entity('entity')
 engine.addEntity(entity)
 entity.setParent(_scene)
@@ -181,7 +188,7 @@ const transform31 = new Transform({
 })
 entity11.addComponentOrReplace(transform31)
 
-// flooring ends
+//-----------------------------------------------------------------flooring ends------------------------------------------------------------
 
 // change the eventUUID to your event
 // check following links about how to setup POAP event
@@ -203,7 +210,9 @@ createDispenser(
 // engine.addEntity(base)
 
 // Atari arcade cabinet
-const arcadeCabinetAtari = new Arcade(new GLTFShape("models/arcadeCabinetAtari.glb"), new Transform({ position: new Vector3(2,0,46.49) }))
+const arcadeCabinetAtari = new Arcade(new GLTFShape("models/arcadeCabinetAtari.glb"), new Transform({ 
+  position: new Vector3(2,0,46)
+}))
 
 // Breakout atari
 const atariGameTransform = new Entity()
@@ -228,12 +237,14 @@ arcadeCabinetAtari.addComponent(
         unloadPlayer()
       }
     },
-    enableDebug: false,
+    enableDebug: false,   
   })
 )
 
 // Bitcoin arcade cabinet
-const arcadeCabinetBitcoin = new Arcade(new GLTFShape("models/arcadeCabinetBitcoin.glb"), new Transform({ position: new Vector3(6,0.01,46.49) }))
+const arcadeCabinetBitcoin = new Arcade(new GLTFShape("models/arcadeCabinetBitcoin.glb"), new Transform({ 
+  position: new Vector3(6,0.01,46)
+ }))
 // arcadeCabinetBitcoin.getComponent(Transform).rotate(Vector3.Up(), -90)
 
 // Breakout bitcoin
@@ -264,7 +275,9 @@ arcadeCabinetBitcoin.addComponent(
 )
 
 // Ethereum arcade cabinet
-const arcadeCabinetEthereum = new Arcade(new GLTFShape("models/arcadeCabinetEthereum.glb"), new Transform({ position: new Vector3(10,0.01,46.49) }))
+const arcadeCabinetEthereum = new Arcade(new GLTFShape("models/arcadeCabinetEthereum.glb"), new Transform({ 
+  position: new Vector3(10,0.01,46)
+}))
 // arcadeCabinetEthereum.getComponent(Transform).rotate(Vector3.Up(), 180)
 
 // Breakout ethereum
@@ -295,7 +308,9 @@ arcadeCabinetEthereum.addComponent(
 )
 
 // Decentraland arcade cabinet
-const arcadeCabinetDecentraland = new Arcade(new GLTFShape("models/arcadeCabinetDecentraland.glb"), new Transform({ position: new Vector3(14,0.01,46.49) }))
+const arcadeCabinetDecentraland = new Arcade(new GLTFShape("models/arcadeCabinetDecentraland.glb"), new Transform({ 
+  position: new Vector3(14,0.01,46)
+}))
 // arcadeCabinetDecentraland.getComponent(Transform).rotate(Vector3.Up(), 90)
 
 // Breakout decentraland
@@ -372,9 +387,9 @@ const imageFromURL5 = new Entity('imageFromURL5')
 engine.addEntity(imageFromURL5)
 imageFromURL5.setParent(_scene)
 const transform10 = new Transform({
-  position: new Vector3(13.11,1.04,5.60),
-  rotation: Quaternion.Euler(0, 90, 0,),
-  scale: new Vector3(0.4,0.4,0.4)
+  position: new Vector3(40, 5.1, 14.40),
+  rotation: Quaternion.Euler(0, 0, 0,), 
+  scale: new Vector3(5.6,1.5,0.6)
 })
 imageFromURL5.addComponentOrReplace(transform10)
 
@@ -382,9 +397,9 @@ const imageFromURL6 = new Entity('imageFromURL6')
 engine.addEntity(imageFromURL6)
 imageFromURL6.setParent(_scene)
 const transform11 = new Transform({
-  position: new Vector3(8, 5.14663, 14.40),
+  position: new Vector3(8, 5.1, 14.40),
   rotation: Quaternion.Euler(0, 0, 0,),
-  scale: new Vector3(5.5,1.5,0.4)
+  scale: new Vector3(5.6,1.5,0.6)
 })
 imageFromURL6.addComponentOrReplace(transform11)
 
@@ -399,10 +414,12 @@ script1.spawn(imageFromURL, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bq
 script1.spawn(imageFromURL2, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bqh4ppf6mm3d7zity23ujgvnjdi.ipfs.dweb.link/avtarSuitQR.png"}, createChannel(channelId, imageFromURL2, channelBus))
 script1.spawn(imageFromURL3, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bqh4ppf6mm3d7zity23ujgvnjdi.ipfs.dweb.link/avtarSuitQR.png"}, createChannel(channelId, imageFromURL3, channelBus))
 script1.spawn(imageFromURL4, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bqh4ppf6mm3d7zity23ujgvnjdi.ipfs.dweb.link/avtarSuitQR.png"}, createChannel(channelId, imageFromURL4, channelBus))
-script1.spawn(imageFromURL5, {"image":"https://bafybeiegpazlbhaqw7mrl4eqnahxip5bqh4ppf6mm3d7zity23ujgvnjdi.ipfs.dweb.link/avtarSuitQR.png"}, createChannel(channelId, imageFromURL5, channelBus))
+script1.spawn(imageFromURL5, {"image":"https://bafybeibouwivw3m3dhtlb3iq5bhlihxxt7qxg3pn2qsgdsdejibfzp5tva.ipfs.dweb.link/Flipkart-Plus.jpg"}, createChannel(channelId, imageFromURL5, channelBus))
 script1.spawn(imageFromURL6, {"image":"https://bafybeiavauicvjx5gfd7jaijhovjgo6jk7gmszd7r73iog357ioqsdnplq.ipfs.dweb.link/1600858456_HulSrV_Flipkart.jpg"}, createChannel(channelId, imageFromURL6, channelBus))
 
-//Video Streaming Platform starts
+//-----------------------------------------------------------------QR Codes ends---------------------------------------------------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------Video Streaming Platform starts---------------------------------------
 
 // Base
 const base = new Entity()
@@ -425,7 +442,7 @@ engine.addEntity(seat)
 const screenBody = new Entity()
 screenBody.addComponent(new GLTFShape('models/screen.glb'))
 screenBody.addComponent(new Transform({ 
-  position: new Vector3(32, 0.05, 32),
+  position: new Vector3(38, 0.05, 32),
   rotation: Quaternion.Euler(0,90,0) 
 }))
 engine.addEntity(screenBody)
@@ -448,11 +465,11 @@ screenTransform.getComponent(Transform).scale.setAll(0.625) // You can change th
 
 // Video stream link from Vimeo
 const videoClip = new VideoClip(
-  'https://player.vimeo.com/external/552481870.m3u8?s=c312c8533f97e808fccc92b0510b085c8122a875'
+  'https://bafybeibsvhenzjmxt7mlbxv7pwnmjxggpw4yvz6ayfzqi4kuppg4ap5fj4.ipfs.dweb.link/Bas%20karo%20Thoda%20Intezaar.%20Don%27t%20Shop%20Now%21.mp4'
 )
 const videoTexture = new VideoTexture(videoClip)
 videoTexture.play()
-videoTexture.loop = true
+videoTexture.loop = false
 
 // Adjust screen material to increase the brightness and clarity
 const screenMaterial = new Material()
@@ -463,16 +480,16 @@ screenMaterial.emissiveIntensity = 0.6
 screenMaterial.roughness = 1.0
 screen.addComponent(screenMaterial)
 
-//Video Streaming Platform ends
+//----------------------------------------------Video Streaming Platform ends-------------------------------------------------
 
-// NFT wall starts
+// ---------------------------------------------------------------------NFT wall starts------------------------------------------
 
 // Base scene
 const baseScene = new Entity()
 baseScene.addComponent(new GLTFShape("models/baseScene.glb"))
 baseScene.addComponent(
   new Transform({
-    position: new Vector3(-16,0,32),
+    position: new Vector3(-16,0,32)
   })
 )
 engine.addEntity(baseScene)
@@ -576,5 +593,297 @@ swapNFTEntity.addComponent(
 )
 engine.addEntity(swapNFTEntity)
 
-//NFT wall ends
+//-----------------------------------------------------------NFT wall ends----------------------------------------------------
 
+//---------------------------------------------------------- piano starts----------------------------------------------
+
+// Base scene
+const baseScene1 = new Entity()
+baseScene1.addComponent(resources.models.baseScene)
+baseScene1.addComponent(new Transform({
+  position: new Vector3(0,0,20)
+}))
+engine.addEntity(baseScene1)
+
+// For transforming the piano
+const scene = new Entity()
+scene.addComponent(
+  new Transform({
+    position: new Vector3(8, 0, 28),
+    rotation: Quaternion.Euler(0, 90, 0)
+  })
+)
+engine.addEntity(scene)
+
+const keyShape = new PlaneShape()
+
+// White keys
+const whiteKeySounds: AudioClip[] = [
+  resources.sounds.whiteKeys.c3,
+  resources.sounds.whiteKeys.d3,
+  resources.sounds.whiteKeys.e3,
+  resources.sounds.whiteKeys.f3,
+  resources.sounds.whiteKeys.g3,
+  resources.sounds.whiteKeys.a3,
+  resources.sounds.whiteKeys.b3,
+  resources.sounds.whiteKeys.c4,
+  resources.sounds.whiteKeys.d4,
+  resources.sounds.whiteKeys.e4,
+  resources.sounds.whiteKeys.f4,
+  resources.sounds.whiteKeys.g4,
+  resources.sounds.whiteKeys.a4,
+  resources.sounds.whiteKeys.b4
+]
+
+let whiteKeyXPos = -5.55
+
+for (let i = 0; i < whiteKeySounds.length; i++) {
+  const key = new PianoKey(
+    keyShape,
+    new Transform({
+      position: new Vector3(whiteKeyXPos, 0.11, 0),
+      scale: new Vector3(0.7, 4, 0.5),
+      rotation: Quaternion.Euler(90, 0, 0)
+    }),
+    Color3.White(),
+    whiteKeySounds[i],
+    resources.trigger.triggerWhitePianoKey,
+    i
+  )
+  key.setParent(scene)
+  keys.push(key)
+  whiteKeyXPos += 0.8
+}
+
+// Black keys
+const blackKeySounds: AudioClip[] = [
+  resources.sounds.blackKeys.cSharp3,
+  resources.sounds.blackKeys.dSharp3,
+  resources.sounds.blackKeys.fSharp3,
+  resources.sounds.blackKeys.gSharp3,
+  resources.sounds.blackKeys.aSharp3,
+  resources.sounds.blackKeys.cSharp4,
+  resources.sounds.blackKeys.dSharp4,
+  resources.sounds.blackKeys.fSharp4,
+  resources.sounds.blackKeys.gSharp4,
+  resources.sounds.blackKeys.aSharp4
+]
+
+let blackKeyXPos = -5.15
+let skipKey = 1
+
+for (let i = 0; i < blackKeySounds.length; i++) {
+  const key = new PianoKey(
+    keyShape,
+    new Transform({
+      position: new Vector3(blackKeyXPos, 0.12, 1),
+      scale: new Vector3(0.45, 2, 0.5),
+      rotation: Quaternion.Euler(90, 0, 0)
+    }),
+    Color3.Black(),
+    blackKeySounds[i],
+    resources.trigger.triggerBlackPianoKey,
+    i + whiteKeySounds.length
+  )
+  key.setParent(scene)
+  keys.push(key)
+
+  // Skip key
+  skipKey++
+  skipKey % 3 !== 0 ? (blackKeyXPos += 0.8) : (blackKeyXPos += 1.6)
+  if (skipKey === 6) skipKey = 1
+}
+
+// Modify player's trigger shape
+utils.TriggerSystem.instance.setCameraTriggerShape(
+  new utils.TriggerBoxShape(
+    new Vector3(0.5, 0.25, 0.5),
+    new Vector3(0, -0.5, 0)
+  )
+)
+
+//-----------------------------------------------------------------piano ends---------------------------------------------------
+
+//----------------------------------------------hummingBird Tree starts---------------------------------------------------------------
+
+// Lay out environment
+
+const tree = new Entity()
+tree.addComponent(
+  new Transform({
+    position: new Vector3(24, 0.1, 8),
+    scale: new Vector3(1.6, 2.5, 1.6)
+  })
+)
+tree.addComponent(new GLTFShape('models/Tree.gltf'))
+tree.addComponent(new Animator())
+const treeClip = new AnimationState('Tree_Action', { looping: false })
+tree.getComponent(Animator).addClip(treeClip)
+tree.addComponent(
+  new OnPointerDown(
+    (e) => {
+      //treeClip.stop()
+      treeClip.play()
+      log('new bird')
+      newBird()
+    },
+    { button: ActionButton.POINTER, hoverText: 'Shake' }
+  )
+)
+engine.addEntity(tree)
+
+const ground = new Entity()
+ground.addComponent(
+  new Transform({
+    position: new Vector3(24, 0.1, 8),
+    scale: new Vector3(1.6, 1.6, 1.6)
+  })
+)
+ground.addComponent(new GLTFShape('models/Ground.gltf'))
+engine.addEntity(ground)
+
+/////////////////////
+// Other functions
+
+// Starting coordinates for all birds
+
+const startPosition = new Vector3(29, 3.5, 5.5)
+const birdScale = new Vector3(0.2, 0.2, 0.2)
+
+// Create a new bird
+
+const birdShape = new GLTFShape('models/hummingbird.glb')
+
+let birdCounter = 0
+
+function newBird() {
+  if (birdCounter > 10) {
+    return
+  }
+
+  birdCounter += 1
+
+  const bird = new Entity()
+
+  bird.addComponent(
+    new Transform({
+      position: startPosition,
+      scale: birdScale
+    })
+  )
+
+  bird.addComponent(birdShape)
+  const birdAnim = new Animator()
+  bird.addComponent(birdAnim)
+  const flyAnim = new AnimationState('fly', { layer: 0 })
+  flyAnim.speed = 2
+  const lookAnim = new AnimationState('look', { looping: false, layer: 1 })
+  const shakeAnim = new AnimationState('shake', { looping: false, layer: 1 })
+  birdAnim.addClip(flyAnim)
+  birdAnim.addClip(lookAnim)
+  birdAnim.addClip(shakeAnim)
+  flyAnim.play()
+
+  // first sprint
+  const nextPos = new Vector3(
+    Math.random() * 12 + 2,
+    Math.random() * 3 + 1,
+    Math.random() * 12 + 2
+  )
+  bird.getComponent(Transform).lookAt(nextPos)
+  bird.addComponent(new utils.MoveTransformComponent(startPosition, nextPos, 2))
+
+  // keep sprinting on a regular basis
+  bird.addComponent(
+    new utils.Interval(Math.floor(Math.random() * 3000) + 3000, () => {
+      const nextPos = new Vector3(
+        Math.random() * 12 + 2,
+        Math.random() * 3 + 1,
+        Math.random() * 12 + 2
+      )
+      bird.getComponent(Transform).lookAt(nextPos)
+      bird.addComponent(
+        new utils.MoveTransformComponent(
+          bird.getComponent(Transform).position,
+          nextPos,
+          2,
+          () => {
+            randomHeadMovement(bird)
+          }
+        )
+      )
+    })
+  )
+
+  engine.addEntity(bird)
+}
+
+// Randomly determine if any head moving animations are played
+export function randomHeadMovement(bird: IEntity) {
+  const anim = Math.random()
+  if (anim < 0.2) {
+    const move = bird.getComponent(Animator).getClip('look')
+    move.play()
+  } else if (anim > 0.8) {
+    const move = bird.getComponent(Animator).getClip('shake')
+    move.play()
+  }
+}
+
+//--------------------------------------------------------hummingBird Tree ends---------------------------------------------------
+
+//----------------------------------------------------FlipKartCoin CollectionGame starts-----------------------------------------------------
+
+
+// Adding base scene models
+// const base = new Entity()
+// base.addComponent(new GLTFShape('models/baseLight.glb'))
+// engine.addEntity(base)
+
+const platform = new Entity()
+platform.addComponent(new GLTFShape('models/platform.glb'))
+platform.addComponent(new Transform({
+  position: new Vector3(-16,0,16)
+}))
+engine.addEntity(platform)
+
+const coinShape = new GLTFShape('models/coin.glb') // Includes the spinning animation
+
+// Contains the positions for each coin
+const coinPositions = [
+  new Vector3(-13.8, 1.5, 18.2),
+  new Vector3(-10.8, 1.5, 18.2),
+  new Vector3(-8, 1.5, 18.2),
+  new Vector3(-5.2, 1.5, 18.2),
+  new Vector3(-2.2, 1.5, 18.2),
+  new Vector3(-2.2, 2.18, 21),
+  new Vector3(-2.2, 2.8, 24),
+  new Vector3(-5.2, 2.8, 24),
+  new Vector3(-8, 2.8, 24),
+  new Vector3(-10.8, 2.8, 24),
+  new Vector3(-13.8, 2.8, 24),
+  new Vector3(-13.8, 3.4, 26.9),
+  new Vector3(-13.8, 3.9, 29.8),
+  new Vector3(-10.8, 3.9, 29.8),
+  new Vector3(-8, 3.9, 29.8),
+  new Vector3(-5.2, 3.9, 29.8),
+  new Vector3(-2.2, 3.9, 29.8),
+]
+
+const triggerBoxShape = new utils.TriggerBoxShape(
+  new Vector3(1.5, 3, 1.5),
+  new Vector3(0, 1, 0)
+) // Trigger shape for coin
+
+// Setup the coins
+for (const coinPosition of coinPositions) {
+  createCoin(
+    coinShape,
+    new Transform({ position: coinPosition }),
+    triggerBoxShape
+  )
+}
+
+
+
+//----------------------------------------------------FlipKartCoin CollectionGame ends-----------------------------------------------------

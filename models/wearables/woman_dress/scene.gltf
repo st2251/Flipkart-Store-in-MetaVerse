@@ -1,0 +1,436 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 4406,
+      "max": [
+        28.387714385986328,
+        110.54693603515625,
+        24.699237823486328
+      ],
+      "min": [
+        -26.839990615844727,
+        60.98942947387695,
+        -17.968008041381836
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 52872,
+      "componentType": 5126,
+      "count": 4406,
+      "max": [
+        0.9998124241828918,
+        0.8030267357826233,
+        0.99997478723526
+      ],
+      "min": [
+        -0.9998124837875366,
+        -0.5521107316017151,
+        -0.9999961853027344
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4406,
+      "max": [
+        6.373788833618164,
+        6.447902679443359
+      ],
+      "min": [
+        -6.373788356781006,
+        -6.447901725769043
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 35248,
+      "componentType": 5126,
+      "count": 4406,
+      "max": [
+        6.373788833618164,
+        6.447902679443359
+      ],
+      "min": [
+        -6.373788356781006,
+        -6.447901725769043
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 70496,
+      "componentType": 5126,
+      "count": 4406,
+      "max": [
+        6.373788833618164,
+        6.447902679443359
+      ],
+      "min": [
+        -6.373788356781006,
+        -6.447901725769043
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 25848,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 105744,
+      "componentType": 5126,
+      "count": 985,
+      "max": [
+        16.4395809173584,
+        142.298583984375,
+        17.073881149291992
+      ],
+      "min": [
+        -16.790685653686523,
+        107.51148986816406,
+        -7.51086950302124
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 117564,
+      "componentType": 5126,
+      "count": 985,
+      "max": [
+        0.9991178512573242,
+        0.9977350234985352,
+        0.9999015927314758
+      ],
+      "min": [
+        -0.9984808564186096,
+        -0.8988476991653442,
+        -0.9998931288719177
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 985,
+      "max": [
+        0.9999991059303284,
+        0.6719422340393066,
+        0.9997251629829407,
+        1.0
+      ],
+      "min": [
+        -0.9999929070472717,
+        -0.6890465021133423,
+        -0.9995192289352417,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 105744,
+      "componentType": 5126,
+      "count": 985,
+      "max": [
+        3.0305728912353516,
+        2.373138427734375
+      ],
+      "min": [
+        -1.0101914405822754,
+        -2.3731393814086914
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 113624,
+      "componentType": 5126,
+      "count": 985,
+      "max": [
+        3.0305728912353516,
+        2.373138427734375
+      ],
+      "min": [
+        -1.0101914405822754,
+        -2.3731393814086914
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 103392,
+      "componentType": 5125,
+      "count": 5298,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Ali Şahan Yalçın (https://sketchfab.com/alisahanyalcin)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/woman-dress-7f36459d7f7b43548d56e63d899d7354",
+      "title": "Woman Dress"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 124584,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 121504,
+      "byteOffset": 124584,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 129384,
+      "byteOffset": 246088,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 15760,
+      "byteOffset": 375472,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 391232,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Stretch_Denim_FCL1PSD003_FRONT_4181_baseColor.png"
+    },
+    {
+      "uri": "textures/Stretch_Denim_FCL1PSD003_FRONT_4181_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Cotton_Oxford_FCL1PSC011_FRONT_4174_baseColor.png"
+    },
+    {
+      "uri": "textures/Cotton_Oxford_FCL1PSC011_FRONT_4174_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Cotton_Oxford_FCL1PSC011_FRONT_4174_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Stretch_Denim_FCL1PSD003_FRONT_4181",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Cotton_Oxford_FCL1PSC011_FRONT_4174",
+      "normalTexture": {
+        "index": 4
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0,
+        "metallicRoughnessTexture": {
+          "index": 3
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "dress_Stretch_Denim_FCL1PSD003_FRONT_4181_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2,
+            "TEXCOORD_1": 3,
+            "TEXCOORD_2": 4
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "dress_Cotton_Oxford_FCL1PSC011_FRONT_4174_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6,
+            "TANGENT": 8,
+            "TEXCOORD_0": 9,
+            "TEXCOORD_1": 10
+          },
+          "indices": 11,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "fa1ec44860de40ecb961c90240dea561.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        10.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "dress"
+    },
+    {
+      "mesh": 0,
+      "name": "dress_Stretch_Denim_FCL1PSD003_FRONT_4181_0"
+    },
+    {
+      "mesh": 1,
+      "name": "dress_Cotton_Oxford_FCL1PSC011_FRONT_4174_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    }
+  ]
+}

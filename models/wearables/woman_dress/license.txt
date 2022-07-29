@@ -1,0 +1,11 @@
+Model Information:
+* title:	Woman Dress
+* source:	https://sketchfab.com/3d-models/woman-dress-7f36459d7f7b43548d56e63d899d7354
+* author:	Ali Şahan Yalçın (https://sketchfab.com/alisahanyalcin)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Woman Dress" (https://sketchfab.com/3d-models/woman-dress-7f36459d7f7b43548d56e63d899d7354) by Ali Şahan Yalçın (https://sketchfab.com/alisahanyalcin) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
