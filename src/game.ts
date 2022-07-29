@@ -13,12 +13,12 @@ import { addVideoScreen1 } from "./modules/videoScreen1"
 import { addLogo1 } from "./modules/logo1"
 import { addWearable1 } from "./modules/wearable1"
 
+import { WearablesScanner } from './scanner'
+import Door from './door'
 
 import { PianoKey, keys } from './pianoKey'
 import resources from './resources'
 import { createCoin } from './coin'
-
-
 
 import { createChannel } from '../node_modules/decentraland-builder-scripts/channel'
 import { createInventory } from '../node_modules/decentraland-builder-scripts/inventory'
@@ -884,6 +884,103 @@ for (const coinPosition of coinPositions) {
   )
 }
 
-
-
 //----------------------------------------------------FlipKartCoin CollectionGame ends-----------------------------------------------------
+
+//----------------------------------------------------FlipkartPlus Token Scanner starts-------------------------------------------------------
+
+export const sceneMessageBus = new MessageBus()
+
+const door = new Door(
+  new GLTFShape('models/Door_Fantasy.glb'),
+  {
+    position: new Vector3(42.15, 0, 14.20),
+    rotation: new Quaternion(0, 0, 0, 1),
+    scale: new Vector3(2.5,1,1)
+  },
+  'Open',
+  'Close'
+)
+
+const scanner = new WearablesScanner(
+  { position: new Vector3(37, 0, 15) },
+  'urn:decentraland:off-chain:base-avatars:thug_life',
+  sceneMessageBus,
+  () => {
+    sceneMessageBus.emit('openDoor', {})
+    door.addComponentOrReplace(
+      new utils.Delay(5000, () => {
+        sceneMessageBus.emit('closeDoor', {})
+      })
+    )
+  },
+  () => {
+    sceneMessageBus.emit('closeDoor', {})
+  }
+)
+
+sceneMessageBus.on('scanning', () => {
+  scanner.scan()
+})
+
+sceneMessageBus.on('scanapprove', () => {
+  scanner.approve()
+})
+
+sceneMessageBus.on('scanreject', () => {
+  scanner.reject()
+})
+
+sceneMessageBus.on('openDoor', () => {
+  if (!door.isOpen) {
+    door.toggle(true)
+  }
+})
+sceneMessageBus.on('closeDoor', () => {
+  if (door.isOpen) {
+    door.toggle(false)
+  }
+})
+
+const scanner1 = new WearablesScanner(
+  { position: new Vector3(42.95, 0, 13.71),
+    rotation: Quaternion.Euler(0,180,0) },
+  'urn:decentraland:off-chain:base-avatars:thug_life',
+  sceneMessageBus,
+  () => {
+    sceneMessageBus.emit('openDoor', {})
+    door.addComponentOrReplace(
+      new utils.Delay(5000, () => {
+        sceneMessageBus.emit('closeDoor', {})
+      })
+    )
+  },
+  () => {
+    sceneMessageBus.emit('closeDoor', {})
+  }
+)
+
+sceneMessageBus.on('scanning', () => {
+  scanner1.scan()
+})
+
+sceneMessageBus.on('scanapprove', () => {
+  scanner1.approve()
+})
+
+sceneMessageBus.on('scanreject', () => {
+  scanner1.reject()
+})
+
+sceneMessageBus.on('openDoor', () => {
+  if (!door.isOpen) {
+    door.toggle(true)
+  }
+})
+sceneMessageBus.on('closeDoor', () => {
+  if (door.isOpen) {
+    door.toggle(false)
+  }
+})
+
+
+//----------------------------------------------------FlipkartPlus Token Scanner ends-------------------------------------------------------
