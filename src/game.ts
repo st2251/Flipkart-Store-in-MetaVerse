@@ -16,6 +16,9 @@ import { addWearable1 } from "./modules/wearable1"
 import { WearablesScanner } from './scanner'
 import Door from './door'
 
+import Script11 from "models/c4a799c1-9ef8-4787-914e-4f8c15357881/src/item"
+import Script22 from "models/6ef2baf2-3d2e-4093-b22b-34c2b6bb0e7b/src/item"
+
 import { PianoKey, keys } from './pianoKey'
 import resources from './resources'
 import { createCoin } from './coin'
@@ -984,3 +987,37 @@ sceneMessageBus.on('closeDoor', () => {
 
 
 //----------------------------------------------------FlipkartPlus Token Scanner ends-------------------------------------------------------
+
+//--------------------------------------------Billboard and banner starts-------------------------------------------------------------
+
+const imageBillboardBlack = new Entity('imageBillboardBlack')
+engine.addEntity(imageBillboardBlack)
+imageBillboardBlack.setParent(_scene)
+const transform111 = new Transform({
+  position: new Vector3(28.21,0,13),
+  rotation: Quaternion.Euler(0, -45, 0),
+  scale: new Vector3(2, 2, 2)
+})
+imageBillboardBlack.addComponentOrReplace(transform111)
+
+const imageScreen = new Entity('imageScreen')
+engine.addEntity(imageScreen)
+imageScreen.setParent(_scene)
+const transform121 = new Transform({
+  position: new Vector3(-12, 0, 8),
+  rotation: Quaternion.Euler(0, 145, 0),
+  scale: new Vector3(0.6, 0.6, 0.6)
+})
+imageScreen.addComponentOrReplace(transform121)
+
+const channelId1 = Math.random().toString(16).slice(2)
+const channelBus1 = new MessageBus()
+
+const script11 = new Script11()
+const script22 = new Script22()
+script11.init()
+script22.init()
+script11.spawn(imageBillboardBlack, {"image":"https://bafybeicvk22pvfqxtehwozr3bbk6kua2uzj5ngyb7mgisvllycimzi5fji.ipfs.dweb.link/flipkart_plus.jpg"}, createChannel(channelId1, imageBillboardBlack, channelBus1))
+script22.spawn(imageScreen, {"image":"https://bafybeiawevsjnojmluim6y3hsk5nwky5abxibd32xfuki7n5zhszmskvzu.ipfs.dweb.link/SuperCoins_Main_Banner_.jpg"}, createChannel(channelId1, imageScreen, channelBus1))
+
+//--------------------------------------------Billboard and banner ends-------------------------------------------------------------
