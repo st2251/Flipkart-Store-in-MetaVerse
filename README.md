@@ -1,6 +1,6 @@
 # Store Template
  
- A basic generic virtual store for wearables and other tokens
+ A basic generic virtual store for wearables and other tokens using DCL
 
 
 ![](screenshot/screenshot.png)
