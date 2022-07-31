@@ -22,7 +22,9 @@
 	},
 	"dependencies": {
 		"@dcl/ecs-scene-utils": "^1.7.5",
-		"@dcl/ui-scene-utils": "^1.8.3"
+		"@dcl/ui-scene-utils": "^1.8.3",
+		"decentraland-builder-scripts": "^0.24.0",
+		"decentraland-ecs-utils": "^1.5.2"
 	},
 	"bundleDependencies": [
 		"@dcl/ecs-scene-utils",

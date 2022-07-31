@@ -26,6 +26,7 @@ import { createCoin } from './coin'
 import { createChannel } from '../node_modules/decentraland-builder-scripts/channel'
 import { createInventory } from '../node_modules/decentraland-builder-scripts/inventory'
 import Script1 from "models/wearables/src/item"
+import Script100 from "models/7d669c08-c354-45e4-b3a3-c915c8fd6b6e/src/item"
 
 import utils1 from "../node_modules/decentraland-ecs-utils/index"
 import { NFT } from "./nft"
@@ -70,7 +71,7 @@ const entity = new Entity('entity')
 engine.addEntity(entity)
 entity.setParent(_scene)
 const gltfShape = new GLTFShape("models/FloorBaseTiles_01/FloorBaseTiles_01.glb")
-gltfShape.withCollisions = true
+gltfShape.withCollisions =  true
 gltfShape.isPointerBlocker = true
 gltfShape.visible = true
 entity.addComponentOrReplace(gltfShape)
@@ -1021,3 +1022,31 @@ script11.spawn(imageBillboardBlack, {"image":"https://bafybeicvk22pvfqxtehwozr3b
 script22.spawn(imageScreen, {"image":"https://bafybeiawevsjnojmluim6y3hsk5nwky5abxibd32xfuki7n5zhszmskvzu.ipfs.dweb.link/SuperCoins_Main_Banner_.jpg"}, createChannel(channelId1, imageScreen, channelBus1))
 
 //--------------------------------------------Billboard and banner ends-------------------------------------------------------------
+
+const pm1 = new Entity('pm1')
+engine.addEntity(pm1)
+pm1.setParent(_scene)
+const transform61 = new Transform({
+  position: new Vector3(13.8,1.55,11.56),
+  rotation: Quaternion.Euler(0, 90, 0,),
+  scale: new Vector3(2.82, 4.08, 2)
+})
+pm1.addComponentOrReplace(transform61)
+
+const pm2 = new Entity('pm2')
+engine.addEntity(pm2)
+pm2.setParent(_scene)
+const transform71 = new Transform({
+  position: new Vector3(2.2,1.55,11.56),
+  rotation: Quaternion.Euler(0, 90, 0),
+  scale: new Vector3(2.82, 4.08, 2)
+})
+pm2.addComponentOrReplace(transform71)
+
+const channelId22 = Math.random().toString(16).slice(2)
+const channelBus22 = new MessageBus()
+
+const script100 = new Script100()
+script100.init()
+script100.spawn(pm1, {"image":"https://bafybeigp2odug5gjmezwtayltfahnetwzqd7z4lb3gxp5gx2vlgo6wd2pa.ipfs.dweb.link/001.jpg"}, createChannel(channelId22, pm1, channelBus22))
+script100.spawn(pm2, {"image":"https://bafybeifvs3s77zchm2zqndzusj5vpeotfcyrtj4i7sa6wwxcfnumzerkmy.ipfs.dweb.link/004.jpg"}, createChannel(channelId22, pm2, channelBus22))
