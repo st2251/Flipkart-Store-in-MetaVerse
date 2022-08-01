@@ -78,8 +78,48 @@ So here we bring you "Flipkart's 3D virtual world" <br />
 
 3. Download and install the Decentraland CLI by running the following command:
 
-bash
+~~~bash
 npm i -g decentraland
+~~~
+
+### Clone the project:
+
+bash
+  git clone https://github.com/saianand32/NFT-WarrantySystem-BITOffensive-.git
+
+* Go to the project directory
+
+* To download the SDK and required npm modules into your directory, run the following command in CLI
+bash
+ npm i decentraland-ecs
+
+* Now, once the SDK download is complete, run your project using the below command
+bash
+dcl start
+
+## Documentation
+
+[PPT Documentation](https://drive.google.com/file/d/192TvsyfbdwjmdQRYeYozvTWteCe0S09S/view?usp=sharing)
+
+## Future Aspects
+ * Firstly, the *“purchasing”* of product by the user.What we have planned to do is that we will generate a *NFT* of each product.Now the user will purchase the product using the *“MANA tokens”* as currency and in return the NFT of that product will be *transferred* to the user.In this way the user can even flaunt about the item which they own *digitally* as well.Now this product gets delivered to the user in real world.So this is how the metaverse will work -it will connect the virtual world created to the real world we live in !
+
+* Secondly,adding *“Your Orders”* section to create a *“Flipkart wallet”* where all the NFT’s owned by the user will be visible.
+
+* We are even working on the *“camera enabling” feature* , where multiple users can *video chat* with each other ! 
+
+## Authors
+
+  > [Tanisha Bhadani](https://github.com/tanisha-bhadani)
+  
+  > [Rahul Verma](https://github.com/inexorable23)
+  
+  > [Saurabh Tripathi](https://github.com/st2251)
+ 
+#### Made with perseverance and love by 
+#### Team We_Do_It_With_Cookies ❤️
+#### As a solution for Level-2 problem statement given by Flipkart in Flipkart GRID4.0 Hackathon Challenge
+
 
 ## Try it out
 
