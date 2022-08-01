@@ -66,6 +66,21 @@ So here we bring you "Flipkart's 3D virtual world" <br />
 
 * *Builder Decentraland* - decentraland editor for creation of simple objects like trees and billboards.
 
+## Installation
+
+
+### Pre-Requisites:
+1. Install Git Version Control
+[ https://git-scm.com/ ]
+
+2. Install NodeJs
+[ https://nodejs.org/en/download/ ]
+
+3. Download and install the Decentraland CLI by running the following command:
+
+bash
+npm i -g decentraland
+
 ## Try it out
 
 **Install the CLI**
