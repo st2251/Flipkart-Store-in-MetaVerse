@@ -51,6 +51,21 @@ So here we bring you "Flipkart's 3D virtual world" <br />
 
 * *Shop For Flipkart Plus Members* :- To the users who buys the flipkart plus membership, we’ll provide them an exclusive NFT token.Now at the entry gate of this shop there is a scanner which scans the user and checks if the user owns that particular NFT or not.If the user has that token, the entry access is confirmed or else the entry is denied ! Once the access is confirmed,the user gets to enter the shop and enjoy the extra perks and benefits provided by “Flipkart Plus”.
 
+
+## TechStack
+
+* *Decentraland SDK* - powerful tool for creation of virtual 3D scenes.
+
+* *TypeScript* - superset of JavaScript- the main programming language used
+
+* *Sketchfab/Blender/Unity* - to download and modify 3D digital assets in glb/gltf format.
+
+* *MyWebAR* - to view 3D objects in Augmented Reality(AR).
+
+* *Web3.Storage* - to store data/files over the vast decentralized storage,accessible on the public IPFS network via a content ID.
+
+* *Builder Decentraland* - decentraland editor for creation of simple objects like trees and billboards.
+
 ## Try it out
 
 **Install the CLI**
