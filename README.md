@@ -3,8 +3,6 @@
  A basic generic virtual store for wearables and other tokens using DCL
 
 
-![](screenshot/screenshot.png)
-
 This scene shows you:
 
 - links to wearables on the market place
