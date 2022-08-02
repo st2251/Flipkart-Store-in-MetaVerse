@@ -87,7 +87,7 @@ npm i -g decentraland
 ### Clone the project:
 
 ```bash
-  git clone https://github.com/saianand32/NFT-WarrantySystem-BITOffensive-.git
+  git clone https://github.com/st2251/Flipkart-Store-in-MetaVerse.git
 ```
 * Go to the project directory
 
