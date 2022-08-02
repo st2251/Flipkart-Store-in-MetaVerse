@@ -86,19 +86,19 @@ npm i -g decentraland
 
 ### Clone the project:
 
-bash
+```bash
   git clone https://github.com/saianand32/NFT-WarrantySystem-BITOffensive-.git
-
+```
 * Go to the project directory
 
 * To download the SDK and required npm modules into your directory, run the following command in CLI
-bash
+```bash
  npm i decentraland-ecs
-
+```
 * Now, once the SDK download is complete, run your project using the below command
-bash
+```bash
 dcl start
-
+```
 ## Documentation
 
 [PPT Documentation](https://drive.google.com/file/d/192TvsyfbdwjmdQRYeYozvTWteCe0S09S/view?usp=sharing)
