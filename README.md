@@ -124,23 +124,3 @@ dcl start
 #### Made with perseverance and love by 
 #### Team We_Do_It_With_Cookies ❤️
 #### As a solution for Level-2 problem statement given by Flipkart in Flipkart GRID4.0 Hackathon Challenge
-
-
-## Try it out
-
-**Install the CLI**
-
-Download and install the Decentraland CLI by running the following command:
-
-```bash
-npm i -g decentraland
-```
-
-**Previewing the scene**
-
-Download this example and navigate to its directory, then run:
-
-```
-$:  dcl start
-```
-
