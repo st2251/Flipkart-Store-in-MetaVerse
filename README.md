@@ -6,10 +6,12 @@
 * How about having fun and enjoying the feel of being at places like "shopping malls"  without actually being there and from the comfort of your home ..?<br /> 
 * How about owning your product not only in the real world but in digital world as well ?<br />
 <br />
-<br />
 
 * **Sounds** cool right ??**<br />
- <img src="https://bafybeidjwukipmza2eocekav3l7i75uf6335fn7gqaxfeqinbcvvaycyem.ipfs.dweb.link/?filename=Screenshot%2520%252833%2529.png" alt="metaverse" border="0" width=500>
+
+<p align="center">
+  <img src="https://bafybeidjwukipmza2eocekav3l7i75uf6335fn7gqaxfeqinbcvvaycyem.ipfs.dweb.link/?filename=Screenshot%2520%252833%2529.png" alt="animated" />
+</p>
 
 So here we bring you "Flipkart's 3D virtual world" <br />
 * A fully 3D virtual world in MetaVerse in Decentraland. <br />
