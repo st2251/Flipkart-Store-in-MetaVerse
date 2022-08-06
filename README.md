@@ -7,7 +7,7 @@
 * How about owning your product not only in the real world but in digital world as well ?<br />
 <br />
 
-* **Sounds** cool right ??**<br />
+* **Sounds cool right ??** <br />
 
 <p align="center">
   <img src="https://bafybeidjwukipmza2eocekav3l7i75uf6335fn7gqaxfeqinbcvvaycyem.ipfs.dweb.link/?filename=Screenshot%2520%252833%2529.png" alt="animated" />
@@ -48,30 +48,30 @@ So here we bring you "Flipkart's 3D virtual world" <br />
 * Our solution provides both types of buying features,i.e,buying items from the Metacommerce using “MANA tokens” or buying it through Flipkart’s website whose link is provided in the respective 3D models.
 
 ## Features
-* *3D space/Avatar* :-The 3D space which we are using here is the Decentraland which is a virtual world and gives numerous features.One of them is building customizable avatars which helps the user to give itself a unique identity.
+* **3D space/Avatar** :-The 3D space which we are using here is the Decentraland which is a virtual world and gives numerous features.One of them is building customizable avatars which helps the user to give itself a unique identity.
 
-* *Flipkart Supercoins* :- We have added flipkart’s supercoins as a token of gift to all the new customers .Also on every purchase,some of these supercoins depending on the price of the item will be given to the customers.
+* **Flipkart Supercoins** :- We have added flipkart’s supercoins as a token of gift to all the new customers .Also on every purchase,some of these supercoins depending on the price of the item will be given to the customers.
 
-* *Interactive UI* :- To attract more and more customers we have provided stuffs like Atari gaming console,Flipkart’s NFT marketplace where users can buy NFTs,a big LCD screen to display promotional videos and to launch products/assets digitally.
+* **Interactive UI** :- To attract more and more customers we have provided stuffs like Atari gaming console,Flipkart’s NFT marketplace where users can buy NFTs,a big LCD screen to display promotional videos and to launch products/assets digitally.
 
-* *Building The Main flipkart shop* :- Here we have displayed the 3D models of the apparels on which the user can simply tap on and visit the site to purchase it.They can also scan the the attached QR-code to try-on the apparel in AR view.They can also purchase the item using the “MANA token” and in return the “NFT” of that product will be transferred to the user’s linked wallet.This way the user will own the product digitally as well !
+* **Building The Main flipkart shop** :- Here we have displayed the 3D models of the apparels on which the user can simply tap on and visit the site to purchase it.They can also scan the the attached QR-code to try-on the apparel in AR view.They can also purchase the item using the “MANA token” and in return the “NFT” of that product will be transferred to the user’s linked wallet.This way the user will own the product digitally as well !
 
-* *Shop For Flipkart Plus Members* :- To the users who buys the flipkart plus membership, we’ll provide them an exclusive NFT token.Now at the entry gate of this shop there is a scanner which scans the user and checks if the user owns that particular NFT or not.If the user has that token, the entry access is confirmed or else the entry is denied ! Once the access is confirmed,the user gets to enter the shop and enjoy the extra perks and benefits provided by “Flipkart Plus”.
+* **Shop For Flipkart Plus Members** :- To the users who buys the flipkart plus membership, we’ll provide them an exclusive NFT token.Now at the entry gate of this shop there is a scanner which scans the user and checks if the user owns that particular NFT or not.If the user has that token, the entry access is confirmed or else the entry is denied ! Once the access is confirmed,the user gets to enter the shop and enjoy the extra perks and benefits provided by “Flipkart Plus”.
 
 
 ## TechStack
 
-* *Decentraland SDK* - powerful tool for creation of virtual 3D scenes.
+* **Decentraland SDK** - powerful tool for creation of virtual 3D scenes.
 
-* *TypeScript* - superset of JavaScript- the main programming language used
+* **TypeScript** - superset of JavaScript- the main programming language used
 
-* *Sketchfab/Blender/Unity* - to download and modify 3D digital assets in glb/gltf format.
+* **Sketchfab/Blender/Unity** - to download and modify 3D digital assets in glb/gltf format.
 
-* *MyWebAR* - to view 3D objects in Augmented Reality(AR).
+* **MyWebAR** - to view 3D objects in Augmented Reality(AR).
 
-* *Web3.Storage* - to store data/files over the vast decentralized storage,accessible on the public IPFS network via a content ID.
+* **Web3.Storage** - to store data/files over the vast decentralized storage,accessible on the public IPFS network via a content ID.
 
-* *Builder Decentraland* - decentraland editor for creation of simple objects like trees and billboards.
+* **Builder Decentraland** - decentraland editor for creation of simple objects like trees and billboards.
 
 ## Installation
 
